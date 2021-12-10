@@ -66,12 +66,12 @@ class _ChallengePageState extends State<ChallengePage> {
                     ),
                   ),
                 Text(
-                  formatter.format(_record.money),
+                  "${formatter.format(_record.money)}円",
                   style: Theme.of(context).textTheme.headline4,
                 )
               ],
             ),
-            Text("最高記録: ${formatter.format(_maxMoney)}"),
+            Text("最高記録: ${formatter.format(_maxMoney)}円"),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
